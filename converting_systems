@@ -1,0 +1,15 @@
+while True:
+    number = int(input("Enter a number: "))
+    choice = int(input("Enter 1 if you want to convert to binory" + "\n" + "Enter 2 if you want to convert to octal" + "\n" + "Enter 3 if you want to convert it to hex"))
+    if choice == 1:
+        print(bin(number))
+    elif choice == 2:
+        print(octal(number))
+    elif choice == 3:
+      print(hex(number))
+    cont = input("Do you want to continue? ")
+    while cont .lower() not in ("yes", "no"):
+        cont = input("Do you want to continue? ")
+    if cont == "no":
+        print("Break")
+        break
